@@ -1,3 +1,4 @@
+/* assets/css/style.css */
 :root {
     --bg-dark: #021123;
     --accent-cyan: #609dcb;
@@ -59,7 +60,7 @@ header {
 
 main {
     padding: 40px 20px;
-    max-width: 1100px;
+    max-width: 1350px;
     margin: 0 auto;
     width: 100%;
 }
@@ -82,15 +83,15 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
 }
 
 .card {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 10px;
-    padding: 25px 20px;
+    padding: 20px 12px;
     text-align: center;
     text-decoration: none;
     color: var(--text-main);
@@ -106,13 +107,8 @@ main {
 
 .card h3 {
     color: var(--accent-cyan);
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.card p {
-    font-size: 13px;
-    color: #b0c4de;
+    font-size: 17px;
+    margin-bottom: 15px;
 }
 
 footer {
@@ -122,4 +118,10 @@ footer {
     font-size: 13px;
     color: #8ab4f8;
     opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
