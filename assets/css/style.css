@@ -80,11 +80,11 @@ main {
     font-size: 15px;
 }
 
-/* Branch pages layout: 4 columns, 2 rows (4 upar, 4 niche) */
+/* Branch pages layout: exactly 4 columns (4 upar, 4 niche) */
 .branch-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 20px;
     width: 100%;
 }
 
