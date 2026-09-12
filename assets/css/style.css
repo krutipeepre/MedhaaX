@@ -88,12 +88,17 @@ main {
     width: 100%;
 }
 
-/* Subject pages layout: 5 columns in a single row */
+/* Subject pages layout: Centered & Symmetrical alignment for any number of cards (3, 4, or 5) */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
+}
+
+.grid-container .card {
+    flex: 0 1 230px;
 }
 
 .card {
@@ -135,7 +140,7 @@ footer {
 }
 
 @media (max-width: 1100px) {
-    .branch-grid, .grid-container {
+    .branch-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
