@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIML Semester I - MedhaaX</title>
-    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <title>MedhaaX - CSE-AIML Semester 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0b0f19; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; flex: 1; width: 100%; }
+        h1 { font-size: 28px; margin-bottom: 25px; color: #38bdf8; text-align: center; }
+        .subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .subject-card { background: #111b27; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .subject-card h3 { font-size: 16px; margin-bottom: 15px; color: #f8fafc; text-align: center; font-weight: 600; }
+        .pdf-links { display: flex; flex-direction: column; gap: 10px; }
+        .pdf-links a { display: flex; justify-content: space-between; align-items: center; background: #1e293b; padding: 10px 15px; border-radius: 8px; color: #e2e8f0; text-decoration: none; font-size: 14px; transition: background 0.2s; }
+        .pdf-links a:hover { background: #334155; }
+        footer { text-align: center; padding: 20px; background: #0b0f19; border-top: 1px solid #1e293b; color: #94a3b8; font-size: 14px; margin-top: auto; }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo-container"><h1>MedhaaX</h1></div>
-        <a href="../index.html" class="back-btn">&larr; Back to Semesters</a>
-    </header>
-    <main>
-        <div class="hero">
-            <h2>CSE (AI & ML) - Semester I</h2>
-            <p>Access subject-wise syllabus, notes, important questions, and PYQs</p>
-        </div>
-        <div class="grid-container">
-            <div class="card" style="text-align: left;">
-                <h3 style="text-align: center;">Engineering Physics (BT-201)</h3>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <a href="#" style="color: var(--accent-cyan); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Syllabus PDF</span> <span>📄</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Important Qs</span> <span>⭐</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Notes</span> <span>📖</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>PYQs</span> <span>📝</span></a>
+    <div class="container">
+        <h1>CSE-AIML Semester 1 - Subject Repository</h1>
+        <div class="subject-grid">
+            <div class="subject-card">
+                <h3>Mathematics-I (BT-102)</h3>
+                <div class="pdf-links">
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-102/syllabus.pdf" target="_blank"><span>Syllabus PDF</span> <span>📄</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-102/important-qs.pdf" target="_blank"><span>Important Qs</span> <span>⭐</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-102/notes.pdf" target="_blank"><span>Notes</span> <span>📖</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-102/pyqs.pdf" target="_blank"><span>PYQs</span> <span>📝</span></a>
                 </div>
             </div>
-            <div class="card" style="text-align: left;">
-                <h3 style="text-align: center;">Mathematics-II (BT-202)</h3>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <a href="#" style="color: var(--accent-cyan); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Syllabus PDF</span> <span>📄</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Important Qs</span> <span>⭐</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Notes</span> <span>📖</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>PYQs</span> <span>📝</span></a>
+            <div class="subject-card">
+                <h3>Engineering Physics (BT-201)</h3>
+                <div class="pdf-links">
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-201/syllabus.pdf" target="_blank"><span>Syllabus PDF</span> <span>📄</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-201/important-qs.pdf" target="_blank"><span>Important Qs</span> <span>⭐</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-201/notes.pdf" target="_blank"><span>Notes</span> <span>📖</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-201/pyqs.pdf" target="_blank"><span>PYQs</span> <span>📝</span></a>
                 </div>
             </div>
-            <div class="card" style="text-align: left;">
-                <h3 style="text-align: center;">Basic Mechanical Engineering (BT-203)</h3>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <a href="#" style="color: var(--accent-cyan); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Syllabus PDF</span> <span>📄</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Important Qs</span> <span>⭐</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Notes</span> <span>📖</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>PYQs</span> <span>📝</span></a>
+            <div class="subject-card">
+                <h3>Basic Mechanical Engg (BT-203)</h3>
+                <div class="pdf-links">
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-203/syllabus.pdf" target="_blank"><span>Syllabus PDF</span> <span>📄</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-203/important-qs.pdf" target="_blank"><span>Important Qs</span> <span>⭐</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-203/notes.pdf" target="_blank"><span>Notes</span> <span>📖</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-203/pyqs.pdf" target="_blank"><span>PYQs</span> <span>📝</span></a>
                 </div>
             </div>
-            <div class="card" style="text-align: left;">
-                <h3 style="text-align: center;">Basic Civil Engineering & Mechanics (BT-204)</h3>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <a href="#" style="color: var(--accent-cyan); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Syllabus PDF</span> <span>📄</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Important Qs</span> <span>⭐</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Notes</span> <span>📖</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>PYQs</span> <span>📝</span></a>
+            <div class="subject-card">
+                <h3>Basic Civil Engg & Mech (BT-204)</h3>
+                <div class="pdf-links">
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-204/syllabus.pdf" target="_blank"><span>Syllabus PDF</span> <span>📄</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-204/important-qs.pdf" target="_blank"><span>Important Qs</span> <span>⭐</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-204/notes.pdf" target="_blank"><span>Notes</span> <span>📖</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-204/pyqs.pdf" target="_blank"><span>PYQs</span> <span>📝</span></a>
                 </div>
             </div>
-            <div class="card" style="text-align: left;">
-                <h3 style="text-align: center;">Basic Computer Engineering (BT-205)</h3>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <a href="#" style="color: var(--accent-cyan); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Syllabus PDF</span> <span>📄</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Important Qs</span> <span>⭐</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>Notes</span> <span>📖</span></a>
-                    <a href="#" style="color: var(--text-main); text-decoration: none; font-size: 12px; padding: 6px; background: rgba(96,157,203,0.05); border-radius: 4px; display: flex; justify-content: space-between;"><span>PYQs</span> <span>📝</span></a>
+            <div class="subject-card">
+                <h3>Basic Computer Engg (BT-205)</h3>
+                <div class="pdf-links">
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-205/syllabus.pdf" target="_blank"><span>Syllabus PDF</span> <span>📄</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-205/important-qs.pdf" target="_blank"><span>Important Qs</span> <span>⭐</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-205/notes.pdf" target="_blank"><span>Notes</span> <span>📖</span></a>
+                    <a href="../../../data/CSE-AIML/Sem 1/BT-205/pyqs.pdf" target="_blank"><span>PYQs</span> <span>📝</span></a>
                 </div>
             </div>
         </div>
-    </main>
-    <footer><p>&copy; 2026 MedhaaX. All rights reserved.</p></footer>
+    </div>
+    <footer>
+        <p>&copy; 2026 MedhaaX. All rights reserved.</p>
+    </footer>
 </body>
 </html>
